@@ -1,0 +1,64 @@
+PATH
+  remote: ../iklil
+  specs:
+    iklil (0.1.0)
+
+PATH
+  remote: ../jabbah
+  specs:
+    jabbah (0.1.0)
+
+PATH
+  remote: ../ukdah
+  specs:
+    ukdah (0.1.0)
+
+PATH
+  remote: .
+  specs:
+    dubhe (0.1.0)
+      base64 (~> 0.2)
+      cgi (~> 0.4)
+      iklil (~> 0.1)
+      jabbah (~> 0.1)
+      rexml (~> 3.4)
+      ukdah (~> 0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    base64 (0.3.0)
+    cgi (0.5.2)
+    minitest (5.27.0)
+    rake (13.4.2)
+    rexml (3.4.4)
+
+PLATFORMS
+  arm64-darwin-25
+  ruby
+
+DEPENDENCIES
+  base64 (~> 0.2)
+  cgi (~> 0.4)
+  dubhe!
+  iklil!
+  jabbah!
+  minitest (~> 5.0)
+  rake (~> 13.0)
+  rexml (~> 3.4)
+  ukdah!
+
+CHECKSUMS
+  base64 (0.3.0)
+  bundler (4.0.19) sha256=b48056e4c77fb3853cc47775b5447ede44aaa4f53c32f168014ab4fe86587d47
+  cgi (0.5.2)
+  dubhe (0.1.0)
+  iklil (0.1.0)
+  jabbah (0.1.0)
+  minitest (5.27.0)
+  rake (13.4.2)
+  rexml (3.4.4)
+  ukdah (0.1.0)
+
+BUNDLED WITH
+  4.0.19
