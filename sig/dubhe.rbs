@@ -1,0 +1,39 @@
+module Dubhe
+  VERSION: String
+
+  class Error < StandardError
+  end
+
+  class Store
+    def initialize: (?root: String?) -> void
+    def save_entry: (untyped entry) -> untyped
+    def entries: (?source_id: String?) -> Array[untyped]
+    def entry: (String id) -> untyped
+    def update_state: (String id, ?state: Symbol?, ?starred: bool?, ?tags: Array[String]?) -> Hash[String, untyped]
+    def save_body: (String id, untyped body) -> String
+    def body: (String id) -> untyped
+  end
+
+  class Policy
+    class Denied < Error
+    end
+    Result: untyped
+    def initialize: (?profile: Symbol) -> void
+    def apply: (String input, ?base_url: String?, ?allow_remote_images: bool) -> untyped
+    def resolve_local: (String root, String path) -> String
+  end
+
+  module Render
+    def self.call: (untyped node, ?theme: Hash[untyped, untyped]) -> String
+  end
+
+  class Reader
+    def initialize: (?sources: Array[untyped], ?store: Store) -> void
+    def refresh: () -> Array[untyped]
+    def entries: (?source_id: String?, ?filter: Proc?) -> Array[untyped]
+    def open: (untyped entry) -> untyped
+    def back: () -> untyped
+    def forward: () -> untyped
+    def search: (String query, ?source_id: String?) -> Array[untyped]
+  end
+end
