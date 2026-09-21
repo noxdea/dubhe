@@ -11,4 +11,4 @@ gem "jabbah", github: "noxdea/jabbah", tag: "v0.1.0"
 gem "ukdah", github: "noxdea/ukdah", tag: "v0.1.0"
 
 gem "rake", "~> 13.0"
-gem "minitest", "~> 5.0"
+gem "minitest", "~> 6.0"
