@@ -36,10 +36,10 @@ GEM
     base64 (0.3.0)
     cgi (0.5.2)
     drb (2.2.3)
-    minitest (6.0.6)
+    minitest (6.1.0)
       drb (~> 2.0)
-      prism (~> 1.5)
-    prism (1.9.0)
+      prism (>= 1.5, < 3)
+    prism (2.1.0)
     rake (13.4.2)
     rexml (3.4.4)
 
@@ -51,7 +51,7 @@ DEPENDENCIES
   dubhe!
   iklil!
   jabbah!
-  minitest (~> 6.0)
+  minitest (~> 6.1)
   rake (~> 13.0)
   ukdah!
 
@@ -63,8 +63,8 @@ CHECKSUMS
   dubhe (0.1.0)
   iklil (0.1.0)
   jabbah (0.1.0)
-  minitest (6.0.6) sha256=153ea36d1d987a62942382b61075745042a2b3123b1cd48f4c3675af9cc7d6f1
-  prism (1.9.0) sha256=7b530c6a9f92c24300014919c9dcbc055bf4cdf51ec30aed099b06cd6674ef85
+  minitest (6.1.0) sha256=ff373595aa8888631e8a5463986a76b3845346ae6d7fa46e139c1633d418076e
+  prism (2.1.0) sha256=1c0a7c6dea0e93183390fb123f007564dbe663198e2f86ad87204151147601f3
   rake (13.4.2) sha256=cb825b2bd5f1f8e91ca37bddb4b9aaf345551b4731da62949be002fa89283701
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   ukdah (0.1.0)
